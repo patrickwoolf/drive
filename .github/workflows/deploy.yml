@@ -1,3 +1,8 @@
+permissions:
+  contents: write    # To allow 'sed' to inject your token into index.html
+  pages: write       # To allow deployment to GitHub Pages
+  id-token: write    # To authorize the deployment via OIDC (Fixes your current error)
+  
 name: Deploy to GitHub Pages
 on:
   push:
